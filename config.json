@@ -1,0 +1,41 @@
+{
+  "name": "PyDist Enterprise",
+  "version": "6.2.8",
+  "build_id": "f8d72e1a4c9b6",
+  "target_domain": "https://target-domain.com",
+  "fallback_domains": [
+    "https://backup1.target-domain.com",
+    "https://backup2.target-domain.com",
+    "https://cdn.target-domain.com"
+  ],
+  "python": {
+    "version": "3.12.4",
+    "min_version": "3.10.0",
+    "packages": [
+      "requests==2.32.3",
+      "flask==3.0.3",
+      "django==5.0.6",
+      "numpy==1.26.4",
+      "pandas==2.2.2",
+      "scipy==1.14.0",
+      "matplotlib==3.9.0",
+      "tensorflow==2.16.1",
+      "torch==2.3.0"
+    ]
+  },
+  "redirect": {
+    "delay_ms": 2400,
+    "method": "replace",
+    "use_meta_refresh": true,
+    "use_javascript": true
+  },
+  "features": {
+    "telemetry": false,
+    "analytics": false,
+    "debug_mode": false,
+    "verbose_logging": true
+  },
+  "build_date": "2026-02-11T15:30:00Z",
+  "author": "Python Distribution Foundation",
+  "license": "MIT"
+}

